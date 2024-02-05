@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Company>Test</Company>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--you need to change both of these to your path, if you are working with multiple people, you can copy paste line 19 here and include their directories as well, or use a different system entirely.-->
+    <BepinexParentDir Condition="Exists('C:\Program Files (x86)\Steam\steamapps\common\Lethal Company')">C:\Program Files (x86)\Steam\steamapps\common\Lethal Company</BepinexParentDir>
+    
+    <BepinexDir>$(BepinexParentDir)\BepInEx\</BepinexDir>
+    <PluginsDir>$(BepinexDir)plugins\</PluginsDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="libs\**" />
+    <EmbeddedResource Remove="libs\**" />
+    <None Remove="libs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.0.*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="Gemumoddo-LethalEmotesAPI" Version="1.3.2" />
+    <PackageReference Include="UnityEngine.Modules" Version="2022.3.9" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <OutputFiles Include="$(TargetPath);$(TargetDir)$(TargetName).pdb" InProject="false" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <!--Changed "Example Mod" to whatever you named your folder-->
+    <Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(PluginsDir)Test Emote Mod/Example Emote Mod" />
+  </Target>
+
+</Project>
