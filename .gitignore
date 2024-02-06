@@ -362,3 +362,6 @@ MigrationBackup/
 Unity-LethalEmotesApi-UI/AssetBundles/StandaloneWindows/customemotes-ui.manifest
 Unity-LethalEmotesApi-UI/AssetBundles/StandaloneWindows/StandaloneWindows
 Unity-LethalEmotesApi-UI/AssetBundles/StandaloneWindows/StandaloneWindows.manifest
+
+.DS_Store
+*.DS_Store

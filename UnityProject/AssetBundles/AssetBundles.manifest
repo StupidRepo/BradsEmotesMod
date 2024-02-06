@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 1225302999
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: anims
+      Dependencies: {}
+    Info_1:
+      Name: audio
+      Dependencies: {}

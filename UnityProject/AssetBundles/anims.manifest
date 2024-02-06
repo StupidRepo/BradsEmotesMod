@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 2064282154
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e7d8dcbccd83775ce4a9140f00e8af46
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5941c3541d8b403f80e37b0d697371e8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e7d8dcbccd83775ce4a9140f00e8af46
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Anims/daft.anim
+- Assets/Anims/marryme-loop.anim
+- Assets/Anims/murder.anim
+- Assets/Anims/marryme.anim
+Dependencies: []

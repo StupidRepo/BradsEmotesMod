@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 2877033633
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ef000cbe4ba27c60dfef74cb6a20e36e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ef000cbe4ba27c60dfef74cb6a20e36e
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audios/murder/murder-start.ogg
+- Assets/Audios/murder/murder-mid.ogg
+- Assets/Audios/daft/daft-start.ogg
+- Assets/Audios/marryme/marryme-mid.ogg
+Dependencies: []

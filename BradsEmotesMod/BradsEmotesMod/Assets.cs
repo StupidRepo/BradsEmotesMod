@@ -1,11 +1,9 @@
-﻿using Lethal_Company_CustomEmotesAPI_Template_Mod;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using UnityEngine;
 
-namespace CustomEmotesAPI_Template_Mod
+namespace BradsEmotesMod
 {
     internal static class Assets
     {
@@ -14,7 +12,7 @@ namespace CustomEmotesAPI_Template_Mod
 
         internal static void LoadAssetBundlesFromFolder(string folderName)
         {
-            folderName = Path.Combine(Path.GetDirectoryName(ExampleEmoteMod.PInfo.Location), folderName);
+            folderName = Path.Combine(Path.GetDirectoryName(Plugin.PInfo.Location), folderName);
             foreach (var file in Directory.GetFiles(folderName))
             {
                 AssetBundle assetBundle = AssetBundle.LoadFromFile(file);

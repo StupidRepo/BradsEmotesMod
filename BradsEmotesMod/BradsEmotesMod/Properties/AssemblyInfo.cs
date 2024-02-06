@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Lethal Company CustomEmotesAPI Template Mod")]
+[assembly: AssemblyTitle("Brad's Emotes Mod")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Lethal Company CustomEmotesAPI Template Mod")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyProduct("Brad's Emotes Mod")]
+[assembly: AssemblyCopyright("Copyright © 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("199912ba-43b6-4276-b420-7bfaa3eedbe5")]
+// [assembly: Guid("199912ba-43b6-4276-b420-7bfaa3eedbe5")]
 
 // Version information for an assembly consists of the following four values:
 //
